@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      /* This will cause the container element to center
+       itself horizontally within the body using
+        any available
+       width of the viewport beyond its 992px width. */
+
+
+
+
+
+
+    }
+
+    .row {
+      width: 100%;
+      /* to ensure each row takes
+      up the full width of the its parent element. */
+      display: flex;
+      /* so that its children line up in a "row". */
+
+      padding-left: 50px;
+      padding-right: 50px;
+
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      /* allow three elements to sit next to
+      each other on a single horizontal line,  */
+      padding-left: 8px;
+      padding-right: 8px;
+      /* so that the contents of each
+      "column" are given some space to breathe. */
+
+
+
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="containter">
+
+    <h1>Indiana Jones</h1>
+    <div class="row">
+
+      <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders">
+        <h2>Raiders of the Lost Ark</h2>
+        <p>Lucas conceived Raiders of the Lost Ark in the early 1970s. Seeking to modernize the serial films of the 20th century.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="Temple">
+        <h2>Temple of Doom</h2>
+        <p>The film was released to financial success, but initial reviews were mixed, critizing its darker elements and violence.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="Crusade">
+        <h2>The Last Crusade</h2>
+        <p>After the mixed reaction to Indiana Jones ans the Temple of Doom, Spielberg chose to tone down the dark tone and graphic violence in the next installment.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
